@@ -10,7 +10,7 @@
 
 #### Решение:
 ##### Конфиг. файл haproxy: 
-[]() 
+[haproxy-hw10.1.cfg](https://github.com/vajnichev/10-02-hw/blob/main/haproxy-hw10.1.cfg) 
 ```bash
 global
 	log /dev/log	local0
@@ -77,7 +77,9 @@ listen web_tcp
 	server s2 127.0.0.1:9999 check inter 3s
 ```
 `На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy`
-![png]()
+![png](https://github.com/vajnichev/10-02-hw/blob/main/img/10.2.1.png)
+![png](https://github.com/vajnichev/10-02-hw/blob/main/img/10.2.2.png)
+
 
 ### Задание 2
 
@@ -88,7 +90,7 @@ listen web_tcp
 
 #### Решение:
 #### Конфиг. файл haproxy:
-[]()
+[haproxy-hw-10.2.cfg](https://github.com/vajnichev/10-02-hw/blob/main/haproxy-hw-10.2.cfg)
 ```bash
 global
 	log /dev/log	local0
@@ -149,5 +151,8 @@ backend web_servers    # секция бэкенд
 	server s3 127.0.0.1:8989 weight 4 check
 ```
 `На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy c использованием домена example.local и без него.`
-![png]()
+![png](https://github.com/vajnichev/10-02-hw/blob/main/img/10.2.3.png)
+![png](https://github.com/vajnichev/10-02-hw/blob/main/img/10.2.4.png)
+![png](https://github.com/vajnichev/10-02-hw/blob/main/img/10.2.5.png)
+
 
